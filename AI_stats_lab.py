@@ -27,7 +27,8 @@ def card_experiment():
     count_B_given_A = 0
     count_A_and_B = 0
 
-    deck = np.array([1]*4 + [0]*48)  # 1 = Ace, 0 = non-Ace
+    # 1 = Ace, 0 = non-Ace
+    deck = np.array([1]*4 + [0]*48)  
 
     for _ in range(n_sim):
         draw = rng.choice(deck, size=2, replace=False)
